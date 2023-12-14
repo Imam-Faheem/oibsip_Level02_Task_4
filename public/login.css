@@ -1,0 +1,182 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    /* background: linear-gradient(120deg, #4973ff22, #0a239f47, #0011ff13); */
+    background-color: #e7e7e7;
+    overflow-x: hidden;
+}
+.container-heading{
+margin-top: 40px;
+font-weight: bolder;
+}
+#containerID {
+    width: 80vw;
+    display: flex;
+    margin: 50px auto;
+    /* padding: 20px; */
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    justify-content: center;
+}
+
+
+.LoginImage {
+    max-width: 60%;
+    /* height:max-content; */
+    position: relative;
+    overflow: hidden;
+}
+
+.LoginImage img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+form {
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    box-sizing: border-box;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    color: #797979;
+}
+
+input {
+    width: 100%;
+    padding: 14px 12px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-bottom: 3px solid grey;
+    border: none;
+    /* background: linear-gradient(to right, #ff8c00, #ff0080); Gradient background */
+    color: rgb(0, 0, 0); /* Text color */
+    outline: none; 
+    box-sizing: border-box;
+    border-bottom: 5px solid transparent; /* Set the border to transparent to hide the default border */
+    border-image: linear-gradient(to right, #ff8c00, #ff0080); /* Apply gradient to the border */
+    border-image-slice: 1; /* Ensure the entire border is covered by the gradient */
+}
+
+
+button {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: small;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 14px 12px;
+    margin-top: 30px;
+
+
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+.redirectionLink{
+display: flex;
+justify-content: center;
+font-size: small;
+letter-spacing: 0.8px;
+
+}
+
+.redirectionLink a{
+    text-decoration: none;
+    color: #797979;
+    margin-top: 30px;
+    text-align: center;
+}
+/* .redirectionLink p{
+} */
+.redirectionLink a:hover{
+    font-size: small;
+    color: rgb(0, 115, 255);
+ }
+
+
+/* Add styles for the icon cards */
+.icon-card {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-card a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #f4f4f4; */
+    border: 1px solid rgba(135, 135, 135, 0.256);
+    padding: 3%;
+    border-radius: 5px;
+}
+
+.icon-card i {
+    font-size: 50px;
+}
+
+/* Facebook icon color */
+.icon-card a:nth-child(1) i {
+    color: #3b5998;
+}
+
+/* GitHub icon color */
+.icon-card a:nth-child(2) i {
+    color: #333;
+}
+
+/* LinkedIn icon color */
+.icon-card a:nth-child(3) i {
+    color: #0077b5;
+}
+
+@media (max-width:800px) {
+    #containerID {
+        flex-direction: column-reverse;
+    }
+    form {
+        width: 100%;
+        padding: 25px;
+    }
+    .LoginImage {
+        max-width: 100%;
+    }
+}

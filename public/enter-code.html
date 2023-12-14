@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Enter Code</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Verification Code</h1>
+        <p>Check your email for the verification code and enter it below:</p>
+        <form action="/verify-code" method="post">
+            <!-- Code Input Field -->
+            <label for="code">Verification Code:</label>
+            <input type="text" id="code" name="code" required>
+
+            <!-- Submit Button -->
+            <button type="submit">Verify Code</button>
+        </form>
+        <p>Remember your password? <a href="/login.html">Log in here</a>.</p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

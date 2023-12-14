@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./login.css">
+    <title>Registration Page</title>
+</head>
+<body>
+
+
+    <div id="containerID" class="container">
+        <div class="LoginImage">
+            <img src="https://images.pexels.com/photos/4603462/pexels-photo-4603462.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="images">
+            <div class="overlay">
+                <h2>Welcome to my Registration system</h2>
+            </div>
+        </div>
+
+        <form action="/register" method="post">
+            <!-- Registration Fields -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            
+            <!-- Registration Button -->
+            <button type="submit">Register</button>
+
+            <div style="margin-top: 30px;" class="redirectionLink">
+                <p>Already registered? <a href="/login.html">Login here</a>.</p>
+            </div>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
